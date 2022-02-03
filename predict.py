@@ -1,6 +1,5 @@
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-import pandas as pd
 import numpy as np
 import tensorflow as tf
 import argparse
@@ -45,4 +44,4 @@ visibility = args["visibility"]
 
 to_predict = np.array([[hour, weekday, type_of_day, season, daytime, rain_intensity, rain_state, temperature, visibility]])
 result = model.predict(to_predict)
-print("Predicted traffic volume: ", result)
+print("Predicted traffic volume: ", result[0])
