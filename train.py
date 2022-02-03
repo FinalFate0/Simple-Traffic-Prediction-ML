@@ -26,7 +26,7 @@ test_data_y = pd.read_excel('test_data_y.xlsx', skiprows=[0]).values
 
 tf.random.set_seed(random_seed)
 
-model = model.FullyConnected.build()
+model = model.two_layer.build()
 
 model.compile(loss=loss, optimizer=optimizer)
 model.summary()

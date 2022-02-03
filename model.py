@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-class FullyConnected:
+class two_layer:
     def build():
 
         model = tf.keras.models.Sequential()
