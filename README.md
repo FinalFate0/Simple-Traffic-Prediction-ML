@@ -5,7 +5,7 @@ Link to dataset used for training: https://mostwiedzy.pl/pl/open-research-data/p
 
 A simple ML project using data from the Expressway S6 in Gdansk that produces a value describing how much traffic passes in 5 minutes.
 
-#### Required input:
+#### Required input for predict.py:
 
 hour (0-23)<br />
 day of week Mon-Sun (0-6)<br />
