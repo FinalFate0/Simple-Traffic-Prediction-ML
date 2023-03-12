@@ -15,7 +15,7 @@ Link to public dataset:
 [[Bridge of Knowledge]Permanent traffic counting stations - Expressway S6 in Gdansk (dataset containing 5-min aggregated traffic data and weather information)](https://mostwiedzy.pl/en/open-research-data/permanent-traffic-counting-stations-expressway-s6-in-gdansk-dataset-containing-5-min-aggregated-traf,923120743943369-0)
 
 
-#### Required input for```predict.py```:
+#### Required input for ```predict.py```:
 
 ```Hour of Day (0-23; 24-Hour Time Format)
 Day of Week (0-6; Monday-Sunday)
