@@ -1,18 +1,28 @@
 # Simple-Traffic-Prediction-ML
-Predict traffic volume based on weather and time data
+**Predict traffic volume on Expressway S6 based on weather and time data**
 
-Link to dataset used for training: https://mostwiedzy.pl/pl/open-research-data/permanent-traffic-counting-stations-expressway-s6-in-gdansk-dataset-containing-5-min-aggregated-traf,923120743943369-0
+A Python Machine Learning study project made as part of the PJATK(PJAIT) Gdańsk Machine Learning course, using Keras/TensorFlow and a public dataset from the Bridge of Knowledge database. The data has been gathered from the Expressway S6 in Gdańsk across the years 2014-2017.  
+The model is a simple Fully Connected Neural Network with one hidden layer.
 
-A simple ML project using data from the Expressway S6 in Gdansk that produces a value describing how much traffic passes in 5 minutes.
+The project consists of the following Python scripts:  
+```analyze_data.py```: used for simple dataset analysis  
+```model.py```: containing the model description  
+```training.py```: used for training the model  
+```predict.py```: used for predicting using a pre-trained model file (```model.h5```) placed in the same directory  
+```evaluate.py```: example script used for comparing the predicted output with the test data from the dataset  
 
-#### Required input for predict.py:
+Link to public dataset:  
+[[Bridge of Knowledge]Permanent traffic counting stations - Expressway S6 in Gdansk (dataset containing 5-min aggregated traffic data and weather information)](https://mostwiedzy.pl/en/open-research-data/permanent-traffic-counting-stations-expressway-s6-in-gdansk-dataset-containing-5-min-aggregated-traf,923120743943369-0)
 
-hour (0-23)<br />
-day of week Mon-Sun (0-6)<br />
-type of day (0-2; regular day, public holiday, summer/winter holiday)<br />
-current season (0-3; spring, summer, autumn, winter)<br />
-time of day (0-3; night, dawn, day, dusk)<br />
-rain intensity (0-100)<br />
-rain state (0-5; no rain, drizzle, light rain, moderate rain, continues rain, light snow, intensive snow)<br />
-temperature in celcius (float value)<br />
-current visibility (0-8)<br />
+
+#### Required input for```predict.py```:
+
+```Hour of Day (0-23; 24-Hour Time Format)
+Day of Week (0-6; Monday-Sunday)
+Type of Day (0-2; Regular Day, Public Holiday, Summer/Winter Holiday)
+Current Season (0-3; Spring, Summer, Autumn, Winter)
+Time of Day (0-3; Night, Dawn, Day, Dusk)
+Rain Intensity (0-100; Least to Most)
+Rain State (0-5; No Rain, Drizzle, Light Rain, Moderate Rain, Continuous Rain, Light Snow, Intense Snow)
+Temperature in Celcius (Float Value)
+Current Visibility (0-8)
