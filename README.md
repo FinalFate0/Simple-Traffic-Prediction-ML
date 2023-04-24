@@ -1,7 +1,7 @@
 # Simple-Traffic-Prediction-ML
 **Predict traffic volume on Expressway S6 based on weather and time data**
 
-A Python Machine Learning study project made as part of the PJATK Gdańsk(PJAIT) Machine Learning course, using Keras/TensorFlow and a public dataset from the Gdańsk University of Technology's Bridge of Knowledge database. The data has been gathered from the Expressway S6 in Gdańsk across the years 2014-2017.  
+This is a Python Machine Learning study project made as part of the PJATK Gdańsk(PJAIT) Machine Learning course, using Keras/TensorFlow and a public dataset from the Gdańsk University of Technology's Bridge of Knowledge database. The data has been gathered from the Expressway S6 in Gdańsk across the years 2014-2017.  
 The model is a simple Fully Connected Neural Network with one hidden layer.  
 
 More information about the dataset:  
@@ -10,7 +10,7 @@ More information about the dataset:
 The project consists of the following Python scripts:  
 ```analyze_data.py```: used for simple dataset analysis  
 ```model.py```: contains the model description  
-```training.py```: trains a new model from scratch and saves it as ```model.h5```
+```training.py```: trains a new model from scratch and saves it as ```model.h5```  
 ```predict.py```: for making predictions using a trained model file (```model.h5```) located in the same directory  
 ```evaluate.py```: example evaluation script that compares the predicted output with the test data from the dataset  
 
